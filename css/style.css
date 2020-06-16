@@ -1,0 +1,192 @@
+:root {
+--basic-light-gray: #EEEEEE;
+--basic-gray: #DFDFDF;
+--basic-dark-gray: #D5D5D5;
+--basic-white:	#FFFFFF;
+--basic-light-green: #00CA74;
+--basic-green: #00BC6C;
+--basic-dark-green: #00AA62;
+--basic-light-yellow: #EFC84A;
+--basic-yellow: #EAB534;
+--basic-dark-yellow: #E5A722;
+--basic-light-red:#FB565A;
+--basic-red: #E74246;
+--basic-dark-red: #D7373B;
+--basic-black: #000000;
+--basic-light-black: #283136;
+}
+
+body {
+min-width: 1178px;
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 24px;
+color: var(--basic-light-black:);
+margin: 0;
+padding: 0;
+background color: var(--basic-white);
+}
+
+a {
+text-decoration: none;
+}
+
+img{
+max-width: 100%;
+height: auto;
+}
+
+.main-navigation {
+font-size: heritage;
+line-height: 30px;
+color: var(--basic-black);
+background color: var(--basic-light-gray);
+}
+
+.main-navigation a:hover {
+color: var(--basic-light-red);
+}
+
+.main-navigation a:focus {
+color: var(--basic-black);
+opacity: 0.3;
+}
+
+.slogan {
+background color: var(--basic-light-gray);
+}
+
+.slogan p {
+font-weight: 500;
+font-size: 55px;
+line-height: 55px;
+color: var(--basic-black:);
+}
+
+.slogan a {
+width: 240px;
+height: 50px;
+}
+
+.products h2 {
+text-align: left;
+font-size: 24px;
+line-height: 30px;
+font-weight: bold;
+}
+
+.slogan a,
+.products a{
+position: absolute;
+border-radius: 3px;
+font-weight: 500;
+font-size: 16px;
+line-height: 18px;
+color: var(--basic-white);
+}
+
+.products a{
+width: 160px;
+height: 50px;}
+
+
+.slogan a,
+.products .first-button
+.price {
+background color:  var(--basic-light-red);
+}
+
+.slogan a:hover,
+.products .first-button:hover
+.price {
+background color:  var(--basic-red);
+}
+
+.slogan a:focus,
+.products .first-button:focus
+.price{
+background color:  var(--basic-dark-red);
+color: var(--basic-white);
+opacity: 0.3;
+}
+
+.products .second-button {
+background color:  var(--basic-light-green);
+}
+
+.products .second-button:hover {
+  background color: var(--basic-green)
+}
+
+.products .second-button:focus {
+background color: var(--basic-dark-green);
+color: var(--basic-white);
+opacity: 0.3;
+}
+
+.products .third button{
+background color: var(--basic-light-yellow);
+}
+
+.products .third button:hover {
+background color: var(--basic-yellow);
+}
+
+.products .third button:focus {
+background color: var(--basic-dark-yellow);
+color: var(--basic-white);
+opacity: 0.3;
+}
+
+.info p{
+font-weight: 500;
+font-size: 45px;
+line-height: 45px;
+}
+
+.info p
+
+.icon a{
+background: linear-gradient(0deg, #E1E1E1, #E1E1E1), #FFFFFF};
+
+.icon a:hover{
+background: linear-gradient(0deg, #E74246, #E74246), #FFFFFF;
+}
+
+.icon a:focus{
+background: linear-gradient(0deg, #D7373B, #D7373B), #FFFFFF;
+box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+}
+
+.price {
+position: absolute;
+width: 200px;
+height: 50px;
+border-radius: 3px;
+color: var(--basic-white);
+}
+
+.submit{
+background: var(--basic-light-gray);
+font-weight: 500;
+font-size: 16px;
+line-height: 18px;
+color: var(--basic-black);
+position: absolute;
+width: 260px;
+height: 50px;
+left: 253px;
+top: 1895px;
+border-radius: 3px;
+}
+
+.submit:hover{
+background: var(--basic-gray);
+}
+
+.submit:focus{
+background: var(--basic-dark-gray;);
+box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+}
