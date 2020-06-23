@@ -26,7 +26,7 @@ line-height: 24px;
 color: var(--basic-light-black:);
 margin: 0;
 padding: 0;
-background color: var(--basic-white);
+background-color: var(--basic-white);
 }
 
 a {
@@ -37,12 +37,24 @@ img{
 max-width: 100%;
 height: auto;
 }
+.visually-hidden {
+display: none;
+}
+
+p,
+span {
+position: absolute;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 24px;
+}
 
 .main-navigation {
 font-size: heritage;
 line-height: 30px;
 color: var(--basic-black);
-background color: var(--basic-light-gray);
+background-color: var(--basic-light-gray);
 }
 
 .main-navigation a:hover {
@@ -55,10 +67,16 @@ opacity: 0.3;
 }
 
 .slogan {
-background color: var(--basic-light-gray);
+background-color: var(--basic-light-gray);
+padding-top: 86px;
 }
 
 .slogan p {
+  position: absolute;
+  width: 538px;
+  height: 111px;
+  left: 140px;
+  top: 192px;
 font-weight: 500;
 font-size: 55px;
 line-height: 55px;
@@ -68,6 +86,20 @@ color: var(--basic-black:);
 .slogan a {
 width: 240px;
 height: 50px;
+padding-top: 38px;
+
+}
+.slogan span {
+position: absolute;
+width: 400px;
+height: 49px;
+left: 140px;
+top: 328px;
+padding-top: 25px;
+}
+
+.products {
+padding: 80px;
 }
 
 .products h2 {
@@ -75,6 +107,7 @@ text-align: left;
 font-size: 24px;
 line-height: 30px;
 font-weight: bold;
+padding-top: 25px;
 }
 
 .slogan a,
@@ -89,55 +122,69 @@ color: var(--basic-white);
 
 .products a{
 width: 160px;
-height: 50px;}
+height: 50px;
+padding-top:32px}
 
 
 .slogan a,
 .products .first-button
 .price {
-background color:  var(--basic-light-red);
+background-color:  var(--basic-light-red);
 }
 
 .slogan a:hover,
 .products .first-button:hover
 .price {
-background color:  var(--basic-red);
+background-color:  var(--basic-red);
 }
 
 .slogan a:focus,
 .products .first-button:focus
 .price{
-background color:  var(--basic-dark-red);
+background-color:  var(--basic-dark-red);
 color: var(--basic-white);
 opacity: 0.3;
 }
 
 .products .second-button {
-background color:  var(--basic-light-green);
+background-color:  var(--basic-light-green);
 }
 
 .products .second-button:hover {
-  background color: var(--basic-green)
+  background-color: var(--basic-green)
 }
 
 .products .second-button:focus {
-background color: var(--basic-dark-green);
+background-color: var(--basic-dark-green);
 color: var(--basic-white);
 opacity: 0.3;
 }
 
 .products .third button{
-background color: var(--basic-light-yellow);
+background-color: var(--basic-light-yellow);
 }
 
 .products .third button:hover {
-background color: var(--basic-yellow);
+background-color: var(--basic-yellow);
 }
 
 .products .third button:focus {
-background color: var(--basic-dark-yellow);
+background-color: var(--basic-dark-yellow);
 color: var(--basic-white);
 opacity: 0.3;
+}
+
+.info {
+padding: 73px;
+}
+
+.info span  {
+padding-top: 32px;
+padding-bottom: 40px;
+}
+
+.info ul {
+padding-top: 73px;
 }
 
 .info p{
@@ -146,19 +193,30 @@ font-size: 45px;
 line-height: 45px;
 }
 
-.info p
+.social {
+  padding-top: 75px;
+}
 
-.icon a{
-background: linear-gradient(0deg, #E1E1E1, #E1E1E1), #FFFFFF};
+.social span{
+  padding-top: 10px;
+}
 
-.icon a:hover{
+.social .icon a{
+background: linear-gradient(0deg, #E1E1E1, #E1E1E1), #FFFFFF;
+position: absolute;
+width: 81px;
+height: 81px;
+}
+
+.social .icon a:hover{
 background: linear-gradient(0deg, #E74246, #E74246), #FFFFFF;
 }
 
-.icon a:focus{
+.social .icon a:focus{
 background: linear-gradient(0deg, #D7373B, #D7373B), #FFFFFF;
 box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
 }
+
 
 .price {
 position: absolute;
@@ -169,7 +227,7 @@ color: var(--basic-white);
 }
 
 .submit{
-background: var(--basic-light-gray);
+background-color: var(--basic-light-gray);
 font-weight: 500;
 font-size: 16px;
 line-height: 18px;
@@ -183,10 +241,10 @@ border-radius: 3px;
 }
 
 .submit:hover{
-background: var(--basic-gray);
+background-color: var(--basic-gray);
 }
 
 .submit:focus{
-background: var(--basic-dark-gray;);
+background-color: var(--basic-dark-gray;);
 box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
 }
