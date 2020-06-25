@@ -1,14 +1,14 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
     <title>Нёрдс</title>
 <link href="css/style.css" rel="stylesheet">
   </head>
-  <body>
-    <header>
-      <nav class="main-navigation">
-        <a>
+  <body class="page-body">
+    <header class="main-header">
+      <nav>
+        <a class="logo">
           <img src="img\svg-nerds\nerds-logo.svg" width="159" height="65" alt="Логотип компании НЕРДС">
         </a>
         <ul class="site-navigation">
@@ -16,7 +16,7 @@
         <li><a href="blank.html">Клиенты</a></li>
         <li><a href="inner.html">Магазин</a></li>
         <li><a href="blank.html">Контакты</a></li>
-        <li><a href="blank.html">
+        <li class="basket"><a href="blank.html">
               <img src="img\svg-nerds\cart-icon.svg" width="15" height="11" alt="корзина">
               Корзина
         </a></li>
@@ -24,14 +24,19 @@
       </nav>
     </header>
 <main>
+  <section class="slogan">
   <h1 class= "visually-hidden">Компания Nerds</h1>
-    <div class="slogan">
+    <div class="content">
         <p>Долго, дорого, скрупулезно.</p>
         <span>
            Математически выверенный дизайн<br>для вашего сайта или мобильного приложения
           <a href="blank.html">Узнать больше</a>
         </span>
     </div>
+    <div>
+        <img src="img\nerds-index-slide1.png" width="760px" height="431px" alt="картинка">
+    </div>
+    </section>
     <section class="products">
         <div>
         <img src="img\illustration-1.jpg" width="300" height="146" alt="Веб-сайты">
@@ -43,27 +48,28 @@
         <img src="img\illustration-2.jpg" width="300" height="146" alt="Приложения">
           <h2>Приложения</h2>
           <p>Покорите топ-10 приложений в<br>AppStore и Google Play</p>
-            <a class="second-button" href="blank.html">Заказать</a>
+          <a class="second-button" href="blank.html">Заказать</a>
         </div>
          <div>
           <img src="img\illustration-3.jpg" width="300" height="146" alt="Презентации">
             <h2>Презентации</h2>
             <p>Вы даже не подозреваете,<br>насколько вы изумительны!</p>
-              <a class="third button" href="blank.html">Заказать</a>
+              <a class="third-button" href="blank.html">Заказать</a>
           </div>
     </section>
     <div class="info">
       <p>Мы — маленькая, но гордая<br>дизайн-студия из Краснодара.
       <span>Исповедуем принципы минимализма и чистоты. Ставим математический расчет<br>превыше креатива. Работаем не покладая рук, как роботы.</span></p>
-      <p> Выполняем заказы на разработку:<p>
+      <p class="paragraph"> Выполняем заказы на разработку:<p>
     <ul>
             <li>Веб-сайтов любой сложности</li>
             <li>Мобильных приложений для iOS и Android</li>
             <li>Слайдшоу и видео для корпоративных презентаций</li>
       </ul>
     </div>
-    <section>
+    <section class="container">
       <h3>С 2004 года любим точность во всем:</h3>
+      <div class="points">
       <p>146%
         <span>Уровень самоотдачи
         </span></p>
@@ -76,13 +82,13 @@
     </section>
 </main>
     <footer>
-      <section>
+      <section class="visually-hidden">
       <h4>NЁRDS DESIGN STUDIO</h4>
       <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
         тел. +7 (812) 275-75-75</p>
       <a href="blank.html">Напишите нам</a>
     </section>
-    <section>
+    <section class="visually-hidden">
         <h4>Напишите нам</h4>
           <form action="http://echo.htmlacademy.ru" method="post">
             <p>
@@ -106,19 +112,23 @@
           </form>
       </section>
       <div class="social">
+        <div>
         <ul class="icon">
-          <li><a href="#">Вконтакте
+          <li><a href="#">
             <img src="img\svg-nerds\vk-icon.svg" width="81" height="81" alt="Вконтакте">
           </a></li>
-          <li><a href="#">Фейсбук
+          <li><a href="#">
             <img src="img\svg-nerds\fb-icon.svg" width="81" height="81" alt="Фейсбук">
           </a></li>
-          <li><a href="#">Инстаграм
+          <li><a href="#">
             <img src="img\svg-nerds\insta-icon.svg" width="81" height="81" alt="Инстаграм">
           </a></li>
         </ul>
+        <div>
+      <div>
         <p>Давайте дружить, это выгодно!
         <span>Скидка 10% для друзей из социальных сетей.</span></p>
+      </div>
       </div>
     </footer>
 </body>
