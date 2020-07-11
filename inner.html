@@ -116,6 +116,11 @@
           <a href="blank.html">
           <img class="list-item-condition" src="img\svg-nerds\browser.svg" width="360" height="40" alt="">
           <img class="list-item" src="img\sedona.jpg" width="360" height="576" alt="Товар 1">
+          <div class= "visually-hidden" class="price">
+            <h2>Sedona</h2>
+            <p>Информационный сайт для туристов</p>
+            <a class="price-button" href="blank.html">9900₽</a>
+          </div>
         </a>
         </div>
       <div>
@@ -148,36 +153,47 @@
         <img class="list-item" src="img\kvast.jpg" width="362" height="580" alt="Товар 6">
         </a>
       </div>
+      <section class="pagination-list">
+        <ul>
+      <li class="pagination-item"><a href="#">1</a></li>
+      <li class="pagination-item pagination-item-current"><a>2</a></li>
+      <li class="pagination-item"><a href="#">3</a></li>
+    </ul>
+       <a class="pagination-list-next" href="#">Следующая</a>
       </section>
-    <section class="visually-hidden"
-      <h2>Sedona</h2>
-      <p>Информационный сайт для туристов</p>
-      <a class="price" href="blank.html">9900₽</a>
-    </section>
+      </section>
   </section>
+
 </main>
 <footer>
-  <section class="visually-hidden">
+  <section class="contacts">
+    <div class="map">
+      <img src="img\map.png" width="1440" height="416" alt="Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
+    </div>
+  <div class="contacts-adress">
   <h4>NЁRDS DESIGN STUDIO</h4>
-  <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
-    тел. +7 (812) 275-75-75</p>
+  <p>191186, Санкт-Петербург,<br> ул. Б. Конюшенная, д. 19/8</p>
+  <p class="telephone">тел. +7 (812) 275-75-75</p>
   <a href="blank.html">Напишите нам</a>
+</div>
 </section>
-<section class="visually-hidden">
+<section class="visually-hidden" class="letter" >
     <h4>Напишите нам</h4>
-      <form action="http://echo.htmlacademy.ru" method="post">
+      <form class="letter-form" action="http://echo.htmlacademy.ru" method="post">
+        <div class="letter-part">
         <p>
-          <label for="letter-name">Ваше имя</label>
+          <label for="letter-name">Ваше имя:</label>
         <input id="letter-name" type="text" name="name"
           placeholder="Имя Фамилия">
         </p>
         <p>
-          <label for="letter-email">Ваш email</label>
+          <label for="letter-email">Ваш email:</label>
         <input id="letter-email" type="text" name="email"
           placeholder="email@example.com">
         </p>
+      </div>
         <p>
-          <label for="letter-text">Текст письма</label>
+          <label for="letter-text">Текст письма:</label>
         <input id="letter-text" type="text" name="text"
           placeholder="В свободной форме">
         </p>
