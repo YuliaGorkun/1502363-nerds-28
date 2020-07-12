@@ -135,7 +135,6 @@ opacity: 0.3;
 
 .slogan  {
 background-color: var(--basic-light-gray);
-background-image: url(img/nerds-index-slide.jpg);
 background-repeat: no-repeat;
   outline: 5px solid rgba(0, 255, 255, 0.3);
   outline-offset: -5px;
@@ -143,7 +142,10 @@ background-repeat: no-repeat;
   margin-top: 0;
 }
 
-.slogan-content {
+.slogan-content1,
+.slogan-content2,
+.slogan-content3
+ {
   outline: 5px solid rgba(0, 0, 255, 0.3);
   outline-offset: -5px;
   padding-bottom: 80px;
@@ -152,7 +154,19 @@ background-repeat: no-repeat;
   padding-top: 86px;
 }
 
-.slogan-content .part-of-content1 {
+.slogan-content1 {
+background-image: url(img/nerds-index-slide1.png);
+}
+
+.slogan-content2 {
+background-image: url(img/nerds-index-slide1.png);
+}
+
+.slogan-content3 {
+background-image: url(img/nerds-index-slide1.png);
+}
+
+.part-of-content1 {
   outline: 5px solid rgba(0, 255, 255, 0.3);
   outline-offset: -5px;
 font-weight: 500;
@@ -171,7 +185,7 @@ line-height: 24px;
 margin-bottom: 38px;
 }
 
-.slogan-content a {
+.slogan a {
 font-style: normal;
 font-weight: 500;
 font-size: 16px;
@@ -182,6 +196,21 @@ padding-left: 54px;
 padding-right: 54px;
 padding-bottom: 15px;
 }
+
+.slider-controls {
+  position: absolute;
+  bottom: 96px;
+  left: 676px;}
+
+.slider-controls button {
+  padding: 0;
+  width: 18px;
+  height: 18px;
+  background-color: var(--basic-white);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
 
 .products {
 display: block;
@@ -600,7 +629,7 @@ opacity: 0.3;
 }
 
 .letter {
-  position: relative;
+  position: fixed;
   bottom: 180px;
   left: 240px;
   width: 960px;
@@ -609,6 +638,8 @@ height: 590px;
   box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.4);
   margin: 0;
   padding: 0;
+  padding-bottom: 84px;
+  padding-top: 63px;
   }
 
 .letter h4 {
@@ -620,7 +651,6 @@ line-height: 53px;
 margin-bottom: 37px;
 margin-left: 100px;
 padding-top: 63px;
-
 }
 
 .letter label{
@@ -656,6 +686,7 @@ line-height: 18px;
 color: var(--basic-white);
 border: none;
 border-radius: 3px;
+
 }
 
 #letter-name, #letter-email, #letter-text {
