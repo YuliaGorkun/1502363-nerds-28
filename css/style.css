@@ -70,6 +70,7 @@ outline: 5px solid rgba(255, 0, 255, 0.3);
 outline-offset: -5px;
 padding-left: 140px;
 padding-right: 202px;
+color: var(--basic-white)
 }
 
 .main-header .logo:hover {
@@ -551,6 +552,8 @@ box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
   line-height: 22px;
 }
 .price h2 {
+color: inherit;
+margin-top: 26px;
 font-weight: bold;
 font-size: 18px;
 line-height: 30px;
@@ -562,22 +565,27 @@ margin-bottom: 12px;
 .price p {
   font-size: 16px;
   line-height: 18px;
-  margin-bottom: 32px;
   text-align: center;
+  margin-bottom: 0;
 }
 
 .price {
+position: absolute;
+margin-top: 0;
+margin: 0;
+bottom: 0;
+display: flex;
+flex-direction: column;
+justify-content: flex-start;
+align-items: center;
 width: 360px;
 height: 231px;
 background: var(--basic-light-gray);
-padding-top: 26px;
-padding-bottom: 44px;
-padding-left: 80px;
-padding-right: 80px;
-margin: 0;
 }
 
 .price-button {
+  display: block;
+  margin-top: 32px;
 padding-top: 17px;
 padding-left: 72px;
 padding-right: 72px;
@@ -677,15 +685,49 @@ color: var(--basic-white);
 opacity: 0.3;
 }
 
+.modal-show {
+  display: block;
+  animation: bounce 0.6s;
+}
+
+.modal-error {
+  animation: shake 0.6s;
+}
+
+
+/* Animations */
+
+@keyframes bounce {
+  0% {
+    transform: translateY(-2000px);
+  }
+
+  70% {
+    transform: translateY(30px);
+  }
+
+  90% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
 .letter {
-  position: static;
-bottom: 180px;
-left: 240px;
+  position: fixed;
+ top: 0;
+ right: 0;
+ bottom: 0;
+ left: 0;
  margin: auto;
+ display: none;
+/*bottom: 180px;
+left: 240px;*/
   width: 960px;
   background: var(--basic-white);
   box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.4);
-  margin: 0;
   padding-top: 63px;
   padding-bottom: 84px;
   }
