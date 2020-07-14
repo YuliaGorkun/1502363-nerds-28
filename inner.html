@@ -61,17 +61,17 @@
             <legend>Сетка:</legend>
               <ul>
                 <li>
-                  <input type="radio" name="grid" value="adaptive"
+                  <input class="filter-input-radio" type="radio" name="grid" value="adaptive"
                   id="filter-adaptive" checked>
                     <label for="filter-adaptive">Адаптивная</label>
                 </li>
                 <li>
-                  <input type="radio" name="grid" value="fixed"
+                  <input class="filter-input-radio" type="radio" name="grid" value="fixed"
                   id="filter-fixed">
                     <label for="filter-fixed">Фиксированная</label>
                 </li>
                 <li>
-                    <input type="radio" name="grid" value="rubber"
+                    <input class="filter-input-radio" type="radio" name="grid" value="rubber"
                     id="filter-rubber">
                       <label for="filter-rubber">Резиновая</label>
                 </li>
@@ -81,29 +81,29 @@
       <legend>Особенности:</legend>
       <ul>
         <li>
-            <input type="checkbox" name="slider"
+            <input class="filter-input-checkbox"  type="checkbox" name="slider"
             id="filter-slider" checked>
-              <label for="filter-slider">слайдер</label>
+              <label for="filter-slider">Cлайдер</label>
         </li>
         <li>
-            <input type="checkbox" name="benefits-block"
+            <input class="filter-input-checkbox" type="checkbox" name="benefits-block"
             id="filter-benefits-block">
-              <label for="filter-benefits-block">блок преимуществ</label>
+              <label for="filter-benefits-block">Блок преимуществ</label>
         </li>
         <li>
-          <input type="checkbox" name="news"
+          <input class="filter-input-checkbox" type="checkbox" name="news"
             id="filter-news" checked>
-              <label for="filter-news">новости</label>
+              <label for="filter-news">Новости</label>
       </li>
         <li>
-          <input type="checkbox" name="gallery"
+          <input class="filter-input-checkbox" type="checkbox" name="gallery"
             id="filter-gallery">
-              <label for="filter-gallery">галерея</label>
+              <label for="filter-gallery">Галерея</label>
         </li>
         <li>
-          <input type="checkbox" name="basket"
+          <input class="filter-input-checkbox" type="checkbox" name="basket"
             id="filter-basket">
-              <label for="filter-basket">корзина</label>
+              <label for="filter-basket">орзина</label>
         </li>
       </ul>
     </fieldset>
@@ -112,8 +112,16 @@
   </section>
     <section class="list">
       <h2 class= "visually-hidden">Перечень товаров</h2>
-      <div>
+      <div class="list-sorting">
         <p>Сортировать:</p>
+        <ul class="sorting-items">
+        <li><a href="blank.html">По цене</a></li>
+        <li><a href="blank.html">По типу</a></li>
+        <li><a href="inner.html">По названию</a></li>
+          </ul>
+      </div>
+      <div class="list-products">
+      <div>
           <a href="blank.html">
           <img class="list-item-condition" src="img\svg-nerds\browser.svg" width="360" height="40" alt="">
           <img class="list-item" src="img\sedona.jpg" width="360" height="576" alt="Товар 1">
@@ -154,6 +162,7 @@
         <img class="list-item" src="img\kvast.jpg" width="362" height="580" alt="Товар 6">
         </a>
       </div>
+    </div>
       <section class="pagination-list">
         <ul>
       <li class="pagination-item"><a href="#">1</a></li>

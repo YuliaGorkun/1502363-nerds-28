@@ -28,24 +28,24 @@
   <section class="slogan">
   <h1 class= "visually-hidden">Компания Nerds</h1>
    <ul class="slider-list">
-    <li class="slogan-content1">
+    <li class="slogan-content1 slide-current">
         <p class="part-of-content1">Долго, дорого,<br> скрупулезно.</p>
         <p class="part-of-content2"> Математически выверенный дизайн<br>для вашего сайта или мобильного приложения </p>
         <a href="blank.html">Узнать больше</a>
     </li>
-    <li class= "visually-hidden" class="slogan-content2" >
+    <li class= "visually-hidden slogan-content2 slide" >
         <p class="part-of-content1">Любим математику<br>как никто другой</p>
         <p class="part-of-content2"> Никакого креатива, только математические <br> для расчета идеальных пропорций </p>
         <a href="blank.html">Узнать больше</a>
     </li>
-    <li class= "visually-hidden" class="slogan-content3" >
+    <li class= "visually-hidden slogan-content3 slide" >
         <p class="part-of-content1">Только ночь,<br>только хардкор</p>
         <p class="part-of-content2"> Работать днем, как все? Мы против этого.<br>Ближе к полуночи работа только начинается.</p>
         <a href="blank.html">Узнать больше</a>
     </li>
   </ul>
   <div class="slider-controls">
-    <button type="button" aria-label="Первый слайд"></button>
+    <button class="current" type="button" aria-label="Первый слайд"></button>
     <button type="button" aria-label="Второй слайд"></button>
     <button type="button" aria-label="Третий слайд"></button>
         </div>
@@ -85,13 +85,16 @@
       <img src="img\nerds-illustration.png" width="360" height="208" alt="Логотип компании НЕРДС">
       <h3>С 2004 года любим точность во всем:</h3>
       <ul class="points">
-      <li> 146%
+      <li> 146
+        <span class="percent">%</span>
         <p>Уровень<br>самоотдачи
         </p></li>
-      <li>100%
+      <li>100
+        <span class="percent">%</span>
         <p>Соблюдение<br>сроков
         </p></li>
-      <li>50%
+      <li>50
+        <span class="percent">%</span>
           <p>Минимальная<br>предоплата
         </p></li>
       </ul>
@@ -116,8 +119,9 @@
       <a href="blank.html">Напишите нам</a>
     </div>
     </section>
-    <section class="visually-hidden" class="letter">
+    <section class="letter letter-modal">
         <h4>Напишите нам</h4>
+        <button class="modal-close" type="submit"  width="21" height="21"  aria-label="Закрыть"></button>
           <form  class="letter-form" action="http://echo.htmlacademy.ru" method="post">
             <div class="letter-part">
             <p>
@@ -136,9 +140,7 @@
             <input id="letter-text" type="text" name="text"
               placeholder="В свободной форме">
             </p>
-            <p>
             <button class="submit">Отправить</button>
-            </p>
           </form>
       </section>
       <div class="social">
