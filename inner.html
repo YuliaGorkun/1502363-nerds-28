@@ -5,12 +5,13 @@
     <title>Нёрдс</title>
 <link href="css/style.css" rel="stylesheet">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500,700">
+  <link rel="stylesheet" href="normalize.css">
   </head>
   <body class="page-body">
     <header >
       <nav class="main-header">
         <a class="logo" href="index.html">
-          <img src="img/svg-nerds/nerds-logo.svg"  width="159" height="65" alt="Логотип компании НЕРДС">
+          <img src="img/svg-nerds/nerdslogo.svg"  width="159" height="65" alt="Логотип компании НЕРДС">
         </a>
         <ul class="site-navigation">
         <li><a href="blank.html">Студия</a></li>
@@ -19,7 +20,7 @@
         <li><a href="blank.html">Контакты</a></li>
           </ul>
         <a class="basket" href="blank.html">
-              <img src="img/svg-nerds/cart-icon.svg" width="15" height="11" alt="корзина">
+              <img src="img/svg-nerds/carticon.svg" width="15" height="11" alt="корзина">
               Корзина
         </a>
       </nav>
@@ -57,6 +58,7 @@
           </div>
         </div>
     </fieldset>
+  </form>
         <form action="blank.html" method="get">
           <fieldset class="filter-grid">
             <legend>Сетка:</legend>
@@ -119,14 +121,14 @@
         <li><a href="blank.html">По цене</a></li>
         <li><a href="blank.html">По типу</a></li>
         <li><a href="inner.html">По названию</a></li>
-        <a class="figure" href=""> <img src="img/svg-nerds/icon-down-dir.svg" width="11" height="10" alt="">
-            <a class="figure" href=""> <img src="img/svg-nerds/icon-up-dir.svg" width="11" height="10" alt="">
+        <li><a class="figure" href=""> <img src="img/svg-nerds/icondowndir.svg" width="11" height="10" alt="вниз"></a></li>
+          <li>  <a class="figure" href=""> <img src="img/svg-nerds/iconupdir.svg" width="11" height="10" alt="вверх"></a></li>
                   </ul>
       </div>
       <div class="list-products">
       <div>
           <a href="blank.html">
-          <img class="list-item-condition" src="img/svg-nerds/browser.svg" width="360" height="40" alt="">
+          <img class="list-item-condition" src="img/svg-nerds/browser.svg" width="360" height="40" alt="состояние">
           <img class="list-item" src="img/sedona.jpg" width="360" height="576" alt="Товар 1">
         </a>
         <section class="price">
@@ -137,7 +139,7 @@
         </div>
       <div>
         <a href="blank.html">
-          <img class="list-item-condition" src="img/svg-nerds\browser.svg" width="358" height="40" alt="">
+          <img class="list-item-condition" src="img/svg-nerds/browser.svg" width="358" height="40" alt="состояние">
           <img class="list-item" src="img/pink.jpg" width="358" height="576" alt="Товар 2">
             </a>
           <section class= "visually-hidden" class="price">
@@ -148,7 +150,7 @@
         </div>
         <div>
         <a href="blank.html">
-          <img class="list-item-condition" src="img/svg-nerds\browser.svg" width="364" height="40" alt="">
+          <img class="list-item-condition" src="img/svg-nerds/browser.svg" width="364" height="40" alt="состояние">
           <img class="list-item" src="img/barbershop.jpg" width="364" height="582" alt="Товар 3">
         </a>
         <section class= "visually-hidden" class="price">
@@ -159,7 +161,7 @@
         </div>
         <div>
         <a href="blank.html">
-        <img class="list-item-condition" src="img/svg-nerds/browser.svg" width="362" height="40" alt="">
+        <img class="list-item-condition" src="img/svg-nerds/browser.svg" width="362" height="40" alt="состояние">
         <img class="list-item" src="img/mishka.jpg" width="362" height="580" alt="Товар 4">
         </a>
         <section class= "visually-hidden" class="price">
@@ -170,7 +172,7 @@
         </div>
         <div>
         <a href="blank.html">
-        <img class="list-item-condition" src="img/svg-nerds/browser.svg" width="364" height="40" alt="">
+        <img class="list-item-condition" src="img/svg-nerds/browser.svg" width="364" height="40" alt="состояние">
         <img class="list-item" src="img/aplus.jpg" width="364" height="582" alt="Товар 5">
         </a>
         <section class= "visually-hidden" class="price">
@@ -181,7 +183,7 @@
         </div>
         <div>
         <a href="blank.html">
-        <img class="list-item-condition" src="img/svg-nerds/browser.svg" width="362" height="40" alt="">
+        <img class="list-item-condition" src="img/svg-nerds/browser.svg" width="362" height="40" alt="состояние">
         <img class="list-item" src="img/kvast.jpg" width="362" height="580" alt="Товар 6">
         </a>
         <section class= "visually-hidden price">
@@ -212,32 +214,31 @@
   <h4>NЁRDS DESIGN STUDIO</h4>
   <p>191186, Санкт-Петербург,<br> ул. Б. Конюшенная, д. 19/8</p>
   <p class="telephone">тел. +7 (812) 275-75-75</p>
-  <a href="blank.html">Напишите нам</a>
+  <a class="letter-button" href="">Напишите нам</a>
 </div>
 </section>
-<section class="visually-hidden" class="letter" >
+<section class="letter letter-modal">
     <h4>Напишите нам</h4>
-      <form class="letter-form" action="http://echo.htmlacademy.ru" method="post">
+    <button class="modal-close" type="submit"  aria-label="Закрыть"></button>
+      <form  class="letter-form" action="http://echo.htmlacademy.ru" method="post">
         <div class="letter-part">
         <p>
           <label for="letter-name">Ваше имя:</label>
-        <input id="letter-name" type="text" name="name"
+        <input class="letter-icon-name" id="letter-name" type="text" name="name"
           placeholder="Имя Фамилия">
         </p>
         <p>
           <label for="letter-email">Ваш email:</label>
-        <input id="letter-email" type="text" name="email"
+        <input  class="letter-icon-email" id="letter-email" type="text" name="email"
           placeholder="email@example.com">
         </p>
       </div>
         <p>
           <label for="letter-text">Текст письма:</label>
-        <input id="letter-text" type="text" name="text"
+        <input class="letter-icon-text" id="letter-text" type="text" name="text"
           placeholder="В свободной форме">
         </p>
-        <p>
         <button class="submit">Отправить</button>
-        </p>
       </form>
   </section>
   <div class="social">
@@ -257,10 +258,11 @@
       </a></li>
     </ul>
   <div class="social-item">
-    <h4 >Давайте дружить, это выгодно! <h4>
+    <h4>Давайте дружить, это выгодно! </h4>
     <p>Скидка 10% для друзей из социальных сетей.</p>
   </div>
   </div>
-  </footer>
+</footer>
+<script src="js/letter.js"></script>
 </body>
 </html>

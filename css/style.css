@@ -59,8 +59,6 @@ display: flex;
 flex-direction: row;
 justify-content: space-between;
 align-items: center;
-outline: 5px solid rgba(0, 255, 0, 0.3);
-outline-offset: -5px;
 background-color: var(--basic-light-gray);
 }
 
@@ -77,8 +75,6 @@ opacity: 0.6;
 }
 
 .main-header .basket {
-outline: 5px solid rgba(255, 255, 255, 0.3);
-outline-offset: -5px;
 padding-right: 140px;
 padding-left: 245px;
 text-transform: uppercase;
@@ -91,8 +87,6 @@ right: 25px;
 }
 
 .main-header .site-navigation {
-  outline: 5px solid rgba(0, 255, 255, 0.3);
-  outline-offset: -5px;
   padding: 0;
   display: flex;
   flex-wrap: nowrap;
@@ -136,8 +130,6 @@ opacity: 0.3;
 
 .slogan  {
 background-color: var(--basic-light-gray);
-  outline: 5px solid rgba(0, 255, 255, 0.3);
-  outline-offset: -5px;
 position: relative;
   margin-top: 0;
 
@@ -148,8 +140,6 @@ position: relative;
 .slogan-content3
  {
 
-  outline: 5px solid rgba(0, 0, 255, 0.3);
-  outline-offset: -5px;
   padding-left: 140px;
   padding-top: 78px;
   background-repeat: no-repeat;
@@ -159,21 +149,19 @@ position: relative;
 }
 
 .slogan-content1 {
-background-image: url(../img/nerds-index-slide1.png);
+background-image: url(../img/nerdsindexslide1.png);
 
 }
 
 .slogan-content2 {
-background-image: url(../img/nerds-index-slide3.png);
+background-image: url(../img/nerdsindexslide3.png);
 }
 
 .slogan-content3 {
-background-image: url(../img/Frame.png);
+background-image: url(../img/frame.png);
 }
 
 .part-of-content1 {
-  outline: 5px solid rgba(0, 255, 255, 0.3);
-  outline-offset: -5px;
 font-weight: 500;
 font-size: 55px;
 line-height: 55px;
@@ -184,8 +172,6 @@ margin-top: 0;
 
 
 .part-of-content2 {
-  outline: 5px solid rgba(0, 0, 255, 0.3);
-  outline-offset: -5px;
 font-size: 16px;
 line-height: 24px;
 margin-bottom: 38px;
@@ -255,8 +241,6 @@ display: block;
 padding-top: 80px;
 padding-left: 140px;
 padding-right: 200px;
-outline: 5px solid rgba(255, 255, 255, 0.3);
-outline-offset: -5px;
 display: grid;
 grid-template-columns: 1fr 1fr 1fr;
 column-gap: 100px;
@@ -298,8 +282,6 @@ margin-bottom: 32px;
 }
 
 .product1, .product2, .product3 {
-  outline: 5px solid rgba(0, 255, 0, 0.3);
-  outline-offset: -5px;
   height: 347px;
 width: 300px;
 }
@@ -385,8 +367,6 @@ background-color: var(--basic-red);
 
 
 .info-content {
-outline: 5px solid rgba(0, 255, 0, 0.3);
-outline-offset: -5px;
 margin-left: 140px;
 margin-right: 149px;
 margin-top: 73px;
@@ -432,8 +412,6 @@ justify-content: space-between;
 
 
 .container {
-  outline: 5px solid rgba(255, 255, 0, 0.3);
-  outline-offset: -5px;
   margin-right: 140px;
   margin-top: 39px;
   display: flex;
@@ -505,8 +483,6 @@ opacity: 0.1;
 }
 
 footer {
-  outline: 5px solid rgba(255, 0, 0, 0.3);
-  outline-offset: -5px;
 }
 
 .social {
@@ -516,6 +492,16 @@ footer {
 min-height: 217px;
 margin-top: 0;
 padding-top: 0;}
+
+.map-img {
+width: 100%;
+}
+.map-marker{
+position: absolute;
+padding: 0;
+left: 860px;
+bottom: 140px;
+}
 
 .icon {
 display: grid;
@@ -661,7 +647,7 @@ line-height: 30px;
   padding-top: 80px;
 border: none;
 margin-bottom: 0;
-width: 100%;
+
 }
 
 .telephone {
@@ -859,11 +845,13 @@ line-height: 18px;
 
 .modal-close {
   position: absolute;
+ width:21px;
+  height:21px;
   top: 78px;
   left: 854px;
   width: 21px;
   height: 21px;
-  background-image: url(../img/svg-nerds/close-cross.svg);
+  background-image: url(../img/svg-nerds/closecross.svg);
   background-color: var(--basic-white);
   opacity: 0.3;
   border: 0;
@@ -933,7 +921,7 @@ outline: none;
 }
 
 .filter-input-checkbox {
-  background-image: url(../img/svg-nerds/checkbox-off.svg);
+  background-image: url(../img/svg-nerds/checkboxoff.svg);
   position: absolute;
   width: 23px;
   height: 23px;
@@ -941,8 +929,8 @@ outline: none;
   left: -30px;
   bottom: -7px;}
 
-  .filter-input-checkbox:checked+label{
-    background-image: url(../img/svg-nerds/checkbox-on.svg);
+  .filter-input-checkbox:checked{
+    background-image: url(../img/svg-nerds/checkboxon.svg);
     user-select: none;
     width: 23px;
     height: 23px;
@@ -958,11 +946,11 @@ outline: none;
     position: relative;
     display: block;
     cursor: pointer;
-    user-select: none;
+    width: 100%;
   }
 
   .filter-input-radio {
-background-image: url(../img/svg-nerds/radio-off.svg);
+background-image: url(../img/svg-nerds/radiooff.svg);
 width: 25px;
 height: 25px;
 opacity: 0.4;
@@ -971,7 +959,7 @@ left: -31px;
 }
 
 .filter-input-radio:checked {
-  background-image: url(../img/svg-nerds/radio-on.svg);
+  /*background-image: url(../img/svg-nerds/radioon.svg);*/
   }
 
 .filter-grid ul {
