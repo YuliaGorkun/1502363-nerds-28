@@ -652,18 +652,26 @@ margin-bottom: 0;
 .telephone {
 padding-bottom: 37px;
 margin-right: 0;
+text-decoration: none;
+color: var(--basic-black);
+
+
 }
 .contacts-adress {
 min-height: 308px;
 width: 319px;
+display: flex;
+flex-direction: column;
 text-align: center;
+align-items: center;
 position: absolute;
 left: 140px;
 top: 134px;
 background-color: var(--basic-white);
 }
 
-.contacts a {
+.letter-button {
+  display: block;
 padding-top: 17px;
 padding-bottom: 15px;
 padding-left: 44px;
@@ -681,11 +689,11 @@ color: var(--basic-white);
 }
 
 
-.contacts a:hover{
+.letter-button:hover{
 background-color:  var(--basic-red);
 }
 
-.contacts a:focus{
+.letter-button:focus{
 background-color:  var(--basic-dark-red);
 color: var(--basic-white);
 opacity: 0.3;
