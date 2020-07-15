@@ -17,9 +17,9 @@
 --basic-light-black: #283136;
 }
 
-.body {
+body {
 min-width: 1440px;
-font-family: Roboto;
+font-family: Roboto, sans-serif;
 font-style: normal;
 font-weight: normal;
 font-size: 16px;
@@ -157,7 +157,7 @@ background-image: url(../img/nerdsindexslide3.png);
 }
 
 .slogan-content3 {
-background-image: url(../img/frame.png);
+background-image: url(../img/nerdsindexslide2.png);
 }
 
 .part-of-content1 {
@@ -317,6 +317,9 @@ background-color:  var(--basic-light-green);
 background-color: var(--basic-dark-green);
 color: var(--basic-white);
 opacity: 0.3;
+}
+.product-price {
+  display: block;
 }
 
 .products .third-button{
@@ -769,18 +772,18 @@ margin-bottom: 9px;
   position: relative;
 }
 
-#letter-name {
+.letter-icon-name {
 width: 360px;
 height: 50px;
 
 }
 
-#letter-email {
+.letter-icon-email{
   width: 360px;
   height: 50px;
 }
 
-#letter-text {
+.letter-icon-text {
   width: 760px;
   height: 118px;
   margin-bottom: 47px;
