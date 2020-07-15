@@ -64,18 +64,16 @@ outline-offset: -5px;
 background-color: var(--basic-light-gray);
 }
 
-.main-header .logo {
-  display: block;
-outline: 5px solid rgba(255, 0, 255, 0.3);
-outline-offset: -5px;
+.logo,
+.logo:hover {
+display: block;
+opacity: 1;
 padding-left: 140px;
 padding-right: 202px;
-color: var(--basic-white)
 }
 
-.main-header .logo:hover {
-opacity: 0;
-background: url(../img/nerds-logo-focus.svg);
+.logo:focus {
+opacity: 0.6;
 }
 
 .main-header .basket {
@@ -372,6 +370,19 @@ background-color: var(--basic-light-gray);
 padding: 0;
 margin: 0;
 }*/
+.info-paragraph li{
+position: relative;}
+
+.info-paragraph li::before {
+content: "";
+position: absolute;
+top: 40%;
+left: -36px;
+width: 25px;
+height: 2px;
+background-color: var(--basic-red);
+}
+
 
 .info-content {
 outline: 5px solid rgba(0, 255, 0, 0.3);
@@ -470,6 +481,7 @@ height: 37px;
 }
 
 .partners {
+border-bottom: 2px solid var(--basic-light-grey);
   padding-left: 140px;
   padding-right: 142px;
 display: flex;
@@ -479,9 +491,18 @@ align-items: center;
 min-height: 180px;
 }
 
-  .partners a {
+.partners-logo {
+  opacity: 0.2;
   display: block;
   }
+
+.partners-logo:hover {
+opacity: 1;
+}
+
+.partners-logo:focus {
+opacity: 0.1;
+}
 
 footer {
   outline: 5px solid rgba(255, 0, 0, 0.3);
@@ -685,14 +706,9 @@ color: var(--basic-white);
 opacity: 0.3;
 }
 
-.modal-show {
-  display: block;
-  animation: bounce 0.6s;
-}
 
-.modal-error {
-  animation: shake 0.6s;
-}
+
+
 
 
 /* Animations */
@@ -730,6 +746,15 @@ left: 240px;*/
   box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.4);
   padding-top: 63px;
   padding-bottom: 84px;
+  }
+
+
+  .modal-error {
+    animation: shake 0.6s;
+  }
+  .modal-show {
+    display: block;
+    animation: bounce 0.6s;
   }
 
 .letter h4 {
@@ -916,8 +941,9 @@ outline: none;
   left: -30px;
   bottom: -7px;}
 
-  .filter-input-checkbox:checked{
+  .filter-input-checkbox:checked+label{
     background-image: url(../img/svg-nerds/checkbox-on.svg);
+    user-select: none;
     width: 23px;
     height: 23px;
     opacity: 0.4;
@@ -936,13 +962,17 @@ outline: none;
   }
 
   .filter-input-radio {
-background-image: url(../img/svg-nerds/radio-on.svg);
+background-image: url(../img/svg-nerds/radio-off.svg);
 width: 25px;
 height: 25px;
 opacity: 0.4;
 bottom: -7px;
 left: -31px;
 }
+
+.filter-input-radio:checked {
+  background-image: url(../img/svg-nerds/radio-on.svg);
+  }
 
 .filter-grid ul {
 padding-left: 0;

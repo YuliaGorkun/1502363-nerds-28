@@ -14,6 +14,8 @@ try {
   isStorageSupport = false;
 }
 
+
+
 letterLink.addEventListener("click", function (evt) {
   evt.preventDefault();
    letterPopup.classList.add("modal-show");
